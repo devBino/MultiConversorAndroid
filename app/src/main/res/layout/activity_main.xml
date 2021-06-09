@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:layout_marginTop="170sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="35sp"
+        android:fontFamily="casual"
+        android:textColor="@color/design_default_color_on_secondary"
+        android:text="App MultiConversor"/>
+
+    <TextView
+        android:layout_marginTop="30sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="25sp"
+        android:fontFamily="casual"
+        android:textColor="@color/design_default_color_on_secondary"
+        android:text="Autor: Fernando Bino Machado"/>
+
+    <TextView
+        android:layout_marginTop="100sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:fontFamily="casual"
+        android:textColor="@color/design_default_color_on_secondary"
+        android:text="Carregando App..."/>
+
+
+</LinearLayout>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Sistema">
+
+    <TextView
+        android:layout_marginTop="100sp"
+        android:layout_marginBottom="30sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Conversões Úteis..."
+        android:textSize="30sp"
+        android:fontFamily="casual"
+        android:textColor="@color/purple_500"/>
+
+    <Button
+        android:id="@+id/btnRentabilidade"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Rentabilidade"
+        android:gravity="center"
+        android:layout_marginLeft="5sp"
+        android:layout_marginRight="5sp"/>
+
+    <Button
+        android:id="@+id/btnCombustivel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Combustivel"
+        android:gravity="center"
+        android:layout_marginLeft="5sp"
+        android:layout_marginRight="5sp"/>
+
+    <Button
+        android:id="@+id/btnMoedas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Moedas"
+        android:gravity="center"
+        android:layout_marginLeft="5sp"
+        android:layout_marginRight="5sp"/>
+
+    <Button
+        android:id="@+id/btnTroco"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Troco"
+        android:gravity="center"
+        android:layout_marginLeft="5sp"
+        android:layout_marginRight="5sp"/>
+
+    <Button
+        android:id="@+id/btnDistancias"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Distancias Velocidades"
+        android:gravity="center"
+        android:layout_marginLeft="5sp"
+        android:layout_marginRight="5sp"/>
+
+    <TextView
+        android:layout_marginTop="100sp"
+        android:layout_marginBottom="30sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="App - Treinamento..."
+        android:textSize="30sp"
+        android:fontFamily="casual"
+        android:textColor="@color/purple_500"/>
+
+</LinearLayout>
