@@ -8,10 +8,22 @@
     tools:context=".views.ViewRentabilidade">
 
     <TextView
+        android:layout_marginTop="5sp"
+        android:layout_marginBottom="30sp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="5sp"
-        android:text="Valor Aporte: "/>
+        android:gravity="center"
+        android:text="Cálculo de Rentabilidades"
+        android:textSize="20sp"
+        android:fontFamily="casual"
+        android:textColor="@color/purple_500"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5sp"
+        android:text="Valor Aporte: "
+        android:fontFamily="casual"
+        android:textColor="@color/purple_500"/>
 
     <EditText
         android:id="@+id/txtValorAporte"
@@ -19,13 +31,16 @@
         android:layout_height="wrap_content"
         android:inputType="numberDecimal"
         android:gravity="center"
-        android:layout_margin="5sp" />
+        android:fontFamily="casual"
+        android:textColor="@color/purple_500"/>
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="5sp"
-        android:text="Duração em Anos do Investimento:"/>
+        android:layout_marginLeft="5sp"
+        android:text="Duração em Anos do Investimento:"
+        android:fontFamily="casual"
+        android:textColor="@color/purple_500"/>
 
     <EditText
         android:id="@+id/txtAnos"
@@ -33,13 +48,16 @@
         android:layout_height="wrap_content"
         android:inputType="numberDecimal"
         android:gravity="center"
-        android:layout_margin="5sp"/>
+        android:fontFamily="casual"
+        android:textColor="@color/purple_500"/>
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="5sp"
-        android:text="Taxa de Rentabilidade ao Ano:"/>
+        android:text="Taxa de Rentabilidade ao Ano:"
+        android:fontFamily="casual"
+        android:textColor="@color/purple_500"/>
 
     <EditText
         android:id="@+id/txtTaxaRentabilidade"
@@ -47,13 +65,16 @@
         android:layout_height="wrap_content"
         android:inputType="numberDecimal"
         android:gravity="center"
-        android:layout_margin="5sp"/>
+        android:fontFamily="casual"
+        android:textColor="@color/purple_500"/>
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="5sp"
-        android:text="Taxa Custódia:"/>
+        android:text="Taxa Custódia:"
+        android:fontFamily="casual"
+        android:textColor="@color/purple_500"/>
 
     <EditText
         android:id="@+id/txtTaxaCustodia"
@@ -61,7 +82,8 @@
         android:layout_height="wrap_content"
         android:inputType="numberDecimal"
         android:gravity="center"
-        android:layout_margin="5sp"/>
+        android:fontFamily="casual"
+        android:textColor="@color/purple_500"/>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -97,10 +119,10 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:gravity="left"
-        android:textSize="17sp"
+        android:textSize="15sp"
         android:layout_margin="2sp"
-        android:textColor="@color/white"
-        android:background="@color/black"/>
+        android:fontFamily="casual"
+        android:textColor="@color/purple_500"/>
 
 
 
