@@ -11,6 +11,8 @@ public class Rentabilidade {
     private Double taxaIr;
     private Double retornoBruto;
     private Double retornoLiquido;
+    private Double lucroBruto;
+    private Double lucroLiquido;
     private Double descontoIr;
     private Double outrosDescontos;
     private Double diasCorridos;
@@ -63,27 +65,37 @@ public class Rentabilidade {
 
     public void setRentabilidades(){
 
+        //seta retorno bruto
         Double baseTaxa = 1 + (this.taxaRetorno / 100);
         Double powTaxa = Math.pow(baseTaxa, this.anos);
         this.retornoBruto = this.valorAporte * powTaxa;
 
+        //calcula e seta taxas e retornos
         this.descontoIr = ((this.retornoBruto - this.valorAporte)/100) * this.taxaIr;
         this.outrosDescontos = ((this.retornoBruto - this.valorAporte)/100) * this.taxaCustodia;
 
         this.retornoLiquido = this.retornoBruto - this.descontoIr - this.outrosDescontos;
 
+        //seta lucros
+        setLucros();
+    }
+
+    public void setLucros(){
+        this.lucroBruto = this.retornoBruto - this.valorAporte;
+        this.lucroLiquido = this.retornoLiquido - this.valorAporte;
     }
 
     public String getRentabilidade(){
         StringBuilder retorno = new StringBuilder();
 
-        retorno.append("RESULTADOS:\n");
         retorno.append("Valor Aporte: R$ " + String.format("%.2f",this.valorAporte)+"\n");
         retorno.append("Retorno Bruto: R$ " + String.format("%.2f",this.retornoBruto)+"\n");
         retorno.append("Desonto IR: R$ " + String.format("%.2f",this.descontoIr)+"\t = " + String.format("%.2f",this.taxaIr)+"%\n");
         retorno.append("Dias Corridos: " + String.valueOf(this.diasCorridos)+"\n" );
         retorno.append("Outros Descontos: R$ " + String.format("%.2f",this.outrosDescontos)+"\n");
         retorno.append("Retorno Liquido: R$ " + String.format("%.2f",this.retornoLiquido)+"\n");
+        retorno.append("Lucro Bruto: R$ " + String.format("%.2f",this.lucroBruto)+"\n");
+        retorno.append("Lucro Liquido: R$ " + String.format("%.2f",this.lucroLiquido)+"\n");
 
         return retorno.toString();
     }

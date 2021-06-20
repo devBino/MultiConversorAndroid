@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10sp"
+    tools:context=".views.ViewResultadoRentabilidade">
+
+    <TextView
+        android:layout_marginTop="5sp"
+        android:layout_marginBottom="30sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Resultados Conversão"
+        android:textSize="30sp"
+        android:fontFamily="casual"
+        android:textColor="@color/purple_500"/>
+
+    <TextView
+        android:id="@+id/tvResultado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:textColor="@color/purple_500"
+        android:fontFamily="casual"
+        android:gravity="left"
+        android:text="teste..." />
+
+    <Button
+        android:id="@+id/btnNovaConversao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nova Conversão"/>
+
+</LinearLayout>

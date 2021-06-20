@@ -54,7 +54,11 @@ public class ViewRentabilidade extends AppCompatActivity {
                 Rentabilidade campos = validaCampos();
 
                 if( campos != null ){
-                    tvResultado.setText( campos.getRentabilidade() );
+
+                    Intent janelaResultado = new Intent(ViewRentabilidade.this, ViewResultadoRentabilidade.class);
+                    janelaResultado.putExtra("resultado", campos.getRentabilidade());
+                    startActivity(janelaResultado);
+
                 }else{
                     txtValorAporte.requestFocus();
                     String msgAviso = "Por Favor, certifique-se de que todos os campos foram informados...";
@@ -67,8 +71,7 @@ public class ViewRentabilidade extends AppCompatActivity {
         btnInicio.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(ViewRentabilidade.this, Sistema.class);
-                startActivity(i);
+                finish();
             }
         });
 

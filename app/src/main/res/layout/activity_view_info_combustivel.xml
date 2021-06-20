@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="5sp"
+    tools:context=".views.ViewInfoCombustivel">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Conversor Combustiveis"
+        android:textSize="25sp"
+        android:fontFamily="casual"
+        android:textColor="@color/purple_500"
+        android:gravity="center"
+        android:layout_marginTop="5sp"
+        android:layout_marginBottom="30sp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Informações Iniciais para Conversão"
+        android:textColor="@color/purple_500"
+        android:fontFamily="casual"
+        android:gravity="left"
+        android:layout_marginBottom="10sp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Combustíveis"
+        android:textColor="@color/purple_500"
+        android:fontFamily="casual"
+        android:gravity="left"
+        android:layout_marginBottom="20sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="60sp"
+            android:gravity="right"
+            android:text="Gasolina"
+            android:textColor="@color/purple_500"
+            android:fontFamily="casual"
+            android:layout_marginRight="5sp"/>
+
+        <EditText
+            android:id="@+id/txtValorLitroGasolina"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="R$ Valor Litro"
+            android:textColor="@color/purple_500"
+            android:textSize="15sp"
+            android:fontFamily="casual"
+            android:gravity="center"
+            android:inputType="numberDecimal"/>
+
+        <EditText
+            android:id="@+id/txtKmLitroGasolina"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20sp"
+            android:hint="Km por Litro"
+            android:textColor="@color/purple_500"
+            android:textSize="15sp"
+            android:fontFamily="casual"
+            android:gravity="center"
+            android:inputType="numberDecimal"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="60sp"
+            android:gravity="right"
+            android:text="Alcool"
+            android:textColor="@color/purple_500"
+            android:fontFamily="casual"
+            android:layout_marginRight="5sp"/>
+
+        <EditText
+            android:id="@+id/txtValorLitroAlcool"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="R$ Valor Litro"
+            android:textColor="@color/purple_500"
+            android:textSize="15sp"
+            android:fontFamily="casual"
+            android:gravity="center"
+            android:inputType="numberDecimal"/>
+
+        <EditText
+            android:id="@+id/txtKmLitroAlcool"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20sp"
+            android:hint="Km por Litro"
+            android:textColor="@color/purple_500"
+            android:textSize="15sp"
+            android:fontFamily="casual"
+            android:gravity="center"
+            android:inputType="numberDecimal"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="60sp"
+            android:gravity="right"
+            android:text="Disel"
+            android:textColor="@color/purple_500"
+            android:fontFamily="casual"
+            android:layout_marginRight="5sp"/>
+
+        <EditText
+            android:id="@+id/txtValorLitroDisel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="R$ Valor Litro"
+            android:textColor="@color/purple_500"
+            android:textSize="15sp"
+            android:fontFamily="casual"
+            android:gravity="center"
+            android:inputType="numberDecimal"/>
+
+        <EditText
+            android:id="@+id/txtKmLitroDisel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20sp"
+            android:hint="Km por Litro"
+            android:textColor="@color/purple_500"
+            android:textSize="15sp"
+            android:fontFamily="casual"
+            android:gravity="center"
+            android:inputType="numberDecimal"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Deslocamento"
+        android:textColor="@color/purple_500"
+        android:fontFamily="casual"
+        android:gravity="left"
+        android:layout_marginTop="20sp"
+        android:layout_marginBottom="20sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="60sp"
+            android:gravity="right"
+            android:text="Distância"
+            android:textColor="@color/purple_500"
+            android:fontFamily="casual"
+            android:layout_marginRight="5sp"/>
+
+        <EditText
+            android:id="@+id/txtDistancia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Distancia em Km a percorrer"
+            android:textColor="@color/purple_500"
+            android:textSize="15sp"
+            android:fontFamily="casual"
+            android:gravity="center"
+            android:inputType="numberDecimal"/>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Financeiras"
+        android:textColor="@color/purple_500"
+        android:fontFamily="casual"
+        android:gravity="left"
+        android:layout_marginTop="20sp"
+        android:layout_marginBottom="20sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="60sp"
+            android:gravity="right"
+            android:text="Valor"
+            android:textColor="@color/purple_500"
+            android:fontFamily="casual"
+            android:layout_marginRight="5sp"/>
+
+        <EditText
+            android:id="@+id/txtValorAbastecer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Valor R$ a abastecer"
+            android:textColor="@color/purple_500"
+            android:textSize="15sp"
+            android:fontFamily="casual"
+            android:gravity="center"
+            android:inputType="numberDecimal"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btnInicio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Inicio"
+            android:gravity="center"
+            android:layout_marginTop="20sp"/>
+
+        <Button
+            android:id="@+id/btnAvancar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Avançar"
+            android:gravity="center"
+            android:layout_marginTop="20sp"/>
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

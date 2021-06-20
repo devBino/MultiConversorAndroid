@@ -9,7 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MultiConversor">
-        <activity android:name=".views.ViewRentabilidade"></activity>
+        <activity android:name=".views.ViewResultadoCombustivel"></activity>
+        <activity android:name=".views.ViewInfoCombustivel" />
+        <activity android:name=".views.ViewResultadoRentabilidade" />
+        <activity android:name=".views.ViewCombustivel" />
+        <activity android:name=".views.ViewRentabilidade" />
         <activity android:name=".Sistema" />
         <activity android:name=".MainActivity">
             <intent-filter>
